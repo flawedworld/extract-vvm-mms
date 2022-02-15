@@ -15,15 +15,18 @@ for app in ${APPS[@]}; do
 done
 
 # Copy VVM config
+rm -rf platform_packages_apps_Dialer
 mkdir -p platform_packages_apps_Dialer/java/com/android/voicemail/impl/res/xml/
 cp com.google.android.dialer/dump/res/xml/vvm_config.xml platform_packages_apps_Dialer/java/com/android/voicemail/impl/res/xml/vvm_config.xml
 
 # Copy MMS configs
+rm -rf platform_packages_apps_Messaging
 mkdir -p platform_packages_apps_Messaging/res/
 cp -r com.google.android.apps.messaging/dump/res/xml-mcc* platform_packages_apps_Messaging/res/
 # Remove vendor specific configs, this is usually for Huawei, Motorola or LG only and is not relevant to us
 rm -r platform_packages_apps_Messaging/res/xml-mcc*/*_config_override.xml
 
+# Print app versions
 for app in ${APPS[@]}; do
     echo the version of $app is:
     aapt dump badging $app/base.apk | grep "VersionName" | sed -e "s/.*versionName='//" -e "s/' .*//"
