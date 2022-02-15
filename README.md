@@ -1,6 +1,6 @@
 # Extractor for Visual Voicemail and MMS configurations
 
-Google no longer maintains MMS or Visual Voicemail configuration files within AOSP.
+Google no longer maintains Visual Voicemail or MMS configuration files within AOSP.
 
 This means that projects and vendors which do not ship the Google Dialer and 
 Google Messaging apps, cannot get valid or working configurations for carriers.
