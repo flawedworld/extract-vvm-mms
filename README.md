@@ -11,7 +11,9 @@ and Messaging apps.
 
 # Usage
 
-Java and ADB must be installed into your environment.
+Java, aapt and ADB must be installed into your environment.
+
+aapt and ADB are part of the Android SDK.
 
 ```./extract.bash```
 
