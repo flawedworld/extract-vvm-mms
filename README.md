@@ -1,4 +1,4 @@
-# Extractor for Visual Voicemail and MMS configurations from the stock OS
+# Extractor for Visual Voicemail and MMS configurations
 
 Google no longer maintains MMS or Visual Voicemail configuration files within AOSP.
 
